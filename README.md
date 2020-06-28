@@ -47,7 +47,6 @@ keyboard backlight should be off
 kblight t 
 keyboard light will toggle from min to max
 
-set up keyboard shortcut using the included keyboard file:
-dconf load /org/gnome/settings-daemon/plugins/media-keys/ < kbdsettings
+set up resolution and keyboard shortcuts:
 
-add .xprofile to ~/ directory to get custom resolution support.
+./setup.sh
