@@ -37,7 +37,9 @@ place the included kblightdb script in a user folder (~/scripts/kblightdb)
 link the file using the fully qualified name:
 ln -s /usr/local/bin/kblight /home/<username>/scripts/kblightdb
 
+
 test the script:
+
 kblight max
 keyboard backlight should be full
 kblight min 
@@ -64,7 +66,9 @@ command : kblight t
 keyboard shortcut:
 left alt + \
 
+
 add new modes for more compatible resolution:
+
 
 xrandr --newmode "1920x1280_60.00"  206.25  1920 2056 2256 2592  1280 1283 1293 1327 -hsync +vsync
 
