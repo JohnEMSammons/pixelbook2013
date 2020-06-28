@@ -1,0 +1,17 @@
+[/]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+
+[custom-keybindings/custom0]
+binding='<Alt>bracketright'
+command='kblight +10'
+name='kblight up'
+
+[custom-keybindings/custom1]
+binding='<Alt>bracketleft'
+command='kblight -10'
+name='kblight down'
+
+[custom-keybindings/custom2]
+binding='<Alt>backslash'
+command='kblight t'
+name='kblight toggle'
