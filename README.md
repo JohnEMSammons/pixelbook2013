@@ -64,11 +64,17 @@ command : kblight t
 keyboard shortcut:
 left alt + \
 
-add new mmodes for more compatible resolution:
+add new modes for more compatible resolution:
+
 xrandr --newmode "1920x1280_60.00"  206.25  1920 2056 2256 2592  1280 1283 1293 1327 -hsync +vsync
+
 xrandr --newmode "1600x1066_60.00"  142.00  1600 1704 1872 2144  1066 1069 1079 1106 -hsync +vsync
+
 xrandr --newmode "1440x960_60.00"  113.75  1440 1528 1672 1904  960 963 973 996 -hsync +vsync
+
 xrandr --addmode eDP-1 1920x1280_60.00
+
 xrandr --addmode eDP-1 1600x1066_60.00
+
 xrandr --addmode eDP-1 1440x960_60.00
 
