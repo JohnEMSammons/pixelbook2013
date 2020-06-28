@@ -47,23 +47,7 @@ keyboard backlight should be off
 kblight t 
 keyboard light will toggle from min to max
 
-set up keyboard shortcut:
-in ubuntu settinggs:
-  keyboard shortcuts
-
-add a shortcut called kblight up
-command : kblight +10
-keyboard shortcut:
-left alt + [
-
-add a shortcut called kblight up
-command : kblight -10
-keyboard shortcut:
-left alt + ]
-
-add a shortcut called kblight up
-command : kblight t
-keyboard shortcut:
-left alt + \
+set up keyboard shortcut using the included keyboard file:
+dconf load /org/gnome/settings-daemon/plugins/media-keys/ < kbdsettings
 
 add .xprofile to ~/ directory to get custom resolution support.
