@@ -13,11 +13,17 @@ use grub customizer to set the 4.8.17 image as the default selection
 possible additions:
 
 XF86AudioLowerVolume
+
 XF86AudioRaiseVolume
+
 XF86AudioMute
+
 XF86Forward
+
 XF86Back
+
 XF86LogOff
+
 XF86PowerOff
 
 name: Brightness Up 
