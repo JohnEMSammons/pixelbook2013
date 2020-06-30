@@ -12,6 +12,6 @@ sudo update-initramfs -u -k all
 sudo apt install grub-customizer
 file=/usr/bin/kblight
 [ -e "$file" ] && sudo rm "$file"
-sudo ln -s $(pwd)/kblightdb /usr/bin/kblight 
+sudo ln -s $(PWD)/kblightdb /usr/bin/kblight 
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < kbdsettings
 cp .xprofile ~/.
