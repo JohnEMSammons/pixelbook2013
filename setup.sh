@@ -1,15 +1,8 @@
 #!/bin/bash
 localectl set-x11-keymap us chromebook
-rm galliumos.gpg*
-wget https://apt.galliumos.org/galliumos.gpg
-sudo apt-key add galliumos.gpg
-sudo cp galliumos.list /etc/apt/sources.list.d/.
 sudo apt update
 sudo apt upgrade
-sudo apt install galliumos-sandy
-sudo apt install linux-image-4.8.17-galliumos
-sudo update-grub
-sudo update-initramfs -u -k all
+sudo apt install -y ./linux-headers-5.0.6-050006_5.0.6-050006.201904030534_all.deb ./linux-headers-5.0.6-050006-generic_5.0.6-050006.201904030534_amd64.deb ./linux-image-unsigned-5.0.6-050006-generic_5.0.6-050006.201904030534_amd64.deb ./linux-modules-5.0.6-050006-generic_5.0.6-050006.201904030534_amd64.deb
 sudo apt install grub-customizer
 sudo rm -f /usr/bin/kblight
 sudo ln -s $PWD/kblightdb /usr/bin/kblight
