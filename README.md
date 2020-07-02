@@ -8,4 +8,4 @@ installing ubuntu 20.04
 
 ./setup.sh
 
-use grub customizer to set the 5.0.6 image as the default selection
+use grub customizer to set the 5.7.7 image as the default selection
