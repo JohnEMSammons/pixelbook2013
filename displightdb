@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+# coding: utf-8
+
+from sys import argv
+import dbus
+
+def mon_light_set(delta):
+    if delta == 1:
+        gdbus call --session --dest "org.gnome.SettingsDaemon.Power" --object-path "/org/gnome/SettingsDaemon/Power" --method "org.gnome.SettingsDaemon.Power.Screen.StepUp"
+    else:
+        gdbus call --session --dest "org.gnome.SettingsDaemon.Power" --object-path "/org/gnome/SettingsDaemon/Power" --method "org.gnome.SettingsDaemon.Power.Screen.StepDown"
+    else:
+
+    # Return current backlight level percentage
+    current = gdbus call --session --dest "org.gnome.SettingsDaemon.Power" --object-path "/org/gnome/SettingsDaemon/Power" --method "org.gnome.SettingsDaemon.Power.Screen.Brightness"
+    return current
+
+if __name__ == '__main__':
+    if len(argv[1:]) == 1:
+        if argv[1] == "--up" or argv[1] == "+":
+            # ./kb-light.py (+|--up) to increment
+            print(kb_light_set(1))
+        elif argv[1] == "--down" or argv[1] == "-":
+            # ./kb-light.py (-|--down) to decrement
+            print(kb_light_set(-1))
+    else:
+            print("Script takes exactly one argument.", len(argv[1:]), "arguments provided.")

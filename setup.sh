@@ -7,6 +7,7 @@ sudo cp galliumos.list /etc/apt/sources.list.d/.
 sudo apt update
 sudo apt upgrade
 sudo apt install galliumos-sandy
+sudo apt install linux-image-4.8.17-galliumos
 sudo update-grub
 sudo update-initramfs -u -k all
 sudo apt install grub-customizer
