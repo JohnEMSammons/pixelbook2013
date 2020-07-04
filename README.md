@@ -52,7 +52,7 @@ alt + search key(super) = caps lock
 
 see chromebook section of /usr/share/X11/xkb/symbols/inet for more information
 
-added keybiard backlight control:
+added keyboard backlight control:
 
 super+[ = keyboard backlight down
 
