@@ -12,7 +12,7 @@ use grub customizer to set the 5.7.7 image as the default selection
 
 
 
-Current Details of setp:
+Current Details of setup:
 
 added latest kernel for sleep support of chrombook devices
 
